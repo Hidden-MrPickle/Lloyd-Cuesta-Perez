@@ -28,7 +28,7 @@ function App() {
         <figure>
           <img
             src={logo}
-            className="text-white opacity-100 border-lime-50 rounded-full"
+            className="text-white opacity-40 bg-white rounded-full md:w-72 md:h-72"
             alt="Panther logo"
           />
         </figure>
