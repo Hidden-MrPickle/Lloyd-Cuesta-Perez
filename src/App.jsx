@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className="mx-auto flex-1 h-[100%] z-[6] absolute top-0 left-0 max-w-screen-xl w-full bg-[url('/Lloyd-Cuesta-Perez/src/assets/bg-sky.jpg')] bg-scale bg-no-repeat bg-cover overflow-x-hidden">
+      <div className="mx-auto flex-1 h-[100%] z-[6] absolute top-0 left-0 max-w-screen-xl w-full bg-[url('/Lloyd-Cuesta-Perez/images/bg-sky.jpg')] bg-scale bg-no-repeat bg-cover overflow-x-hidden">
         <div className=" ml-[75%] opacity-30 z-[7] bg-white fixed  w-[0.1rem] h-full"></div>
         <div className=" ml-[85.2%] opacity-30 z-[7] bg-white fixed  w-[0.1rem] h-full"></div>
         <ul className=" pt-6 flex flex-row-reverse h-24">
