@@ -1,52 +1,55 @@
-import { useState } from "react";
-import logo from "/logo-panther.svg";
+import List from "./list.jsx";
 import "./App.css";
+import Photo from "./photo.jsx";
+import { instagram, whatsapp, github } from "../peIn.js";
 
 function App() {
   //const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        {/*<a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>*/}
+      <div className="mx-auto flex-1 h-[100%] z-[6] absolute top-0 left-0 max-w-screen-xl w-full bg-[url('/Lloyd-Cuesta-Perez/src/assets/bg-sky.jpg')] bg-scale bg-no-repeat bg-cover overflow-x-hidden">
+        <div className=" ml-[75%] opacity-30 z-[7] bg-white fixed  w-[0.1rem] h-full"></div>
+        <div className=" ml-[85.2%] opacity-30 z-[7] bg-white fixed  w-[0.1rem] h-full"></div>
+        <ul className=" pt-6 flex flex-row-reverse h-24">
+          <List
+            social={github}
+            name="Github"
+            logo={"github"}
+            key={"List-1"}
+          ></List>
+          <List
+            social={instagram}
+            name="instagram"
+            logo={"instagram"}
+            key={"List-2"}
+          ></List>
+          <List
+            social={whatsapp}
+            name="Whatsapp"
+            logo={"whatsapp"}
+            key={"List-3"}
+          ></List>
+        </ul>
+        <div className="absolute left-[5rem] top-[-30rem]  size-[70rem] scale-x-[1] z-[3] rotate-[-8deg] overflow-y-hidden">
+          <Photo photo="airplane-landing.png"></Photo>
+        </div>
+        <div className="z-[5] left-[10rem] grayscale-[100%] top-[6rem] w-[22rem] absolute ">
+          <div className=" rounded-md bg-slate-200 absolute top-1/4 left-[-9rem] w-20 h-60"></div>
+          <Photo photo="Asap_front.png" w="370px"></Photo>
+          <h1 className=" text-[4.5rem] w-60 left-10 absolute font-bold text-slate-200 ">
+            Peyton Roberto Bartell
+          </h1>
+        </div>
+
+        <div className="z-[4]  left-[30rem] grayscale-[100%] top-[20rem] absolute w-[22rem]  ">
+          <Photo photo="Asap_back.png" w="370px"></Photo>
+          <div className="rounded-md bg-slate-200 absolute top-[30%] right-[-10rem] w-20 h-60"></div>
+        </div>
+        {
+          // vertical lines
+        }
       </div>
-      <div className="md:mx-36 md:grid md:grid-cols-3 gap-3 sm:grid-cols-1 sm:mx-2 items-center">
-        <figure className="font-oswald font-bold text-5xl justify-items-start pt-5">
-          {" "}
-          Lloyd Cuesta{" "}
-          <figcaption className="my-2 text-center text-2xl font-light">
-            Full Stack Developer
-            <br />
-            Cybersecurity Enthusiast
-          </figcaption>
-        </figure>
-        <figure>
-          <img
-            src={logo}
-            className="text-white opacity-40 bg-white rounded-full md:w-72 md:h-72"
-            alt="Panther logo"
-          />
-        </figure>
-        <figure className="font-oswald pt-7 text-4xl">
-          About Me
-          <figcaption className="font-oswald pt-2 text-2xl opacity-50 font-extralight">
-            {" "}
-            Im an autodidact MERN FullStack Developer located in La Habana, Cuba
-            with a technician degree in IT. I have solid knowledges of
-            Javascript, web scraping, networking , process automatization with
-            bash script in linux ecosystem.
-          </figcaption>
-        </figure>
-      </div>
-      <p className="text-center mt-14 font-oswald">
-        My portfolio will be available coming soon, it is in development phase.
-        Please be patient
-      </p>
     </>
   );
 }
