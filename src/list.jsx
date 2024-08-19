@@ -6,7 +6,7 @@ const List = ({ social, name, alt, logo }) => {
         <figure className="">
           <img
             alt={alt}
-            src={`/Lloyd-Cuesta-Perez/src/assets/${logo}.svg`}
+            src={`/Lloyd-Cuesta-Perez/icons/${logo}.svg`}
             style={{ height: "100%", width: "100%", objectFit: "cover" }}
           ></img>
 
