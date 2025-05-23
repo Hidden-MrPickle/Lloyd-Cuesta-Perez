@@ -4,7 +4,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { TextPlugin } from "gsap/TextPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Button from "./button.jsx";
 import Page from "./page.jsx";
 
 function App() {
@@ -21,6 +20,7 @@ function App() {
       .to("#logo", { rotate: "1080", duration: 1 })
       .to("#hero-loading", { y: -1000 })
       .to("#page", { opacity: 1 });
+    //scroll Trigger
   });
   //const [count, setCount] = useState(0);
 
